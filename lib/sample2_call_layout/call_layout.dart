@@ -108,28 +108,22 @@ class CallPageState extends State<CallPage> {
 // 最终拼接起来
 // ----------------------------------------------
 
-    return new MaterialApp(
-      title: '旅游项目：西湖',
-      theme: new ThemeData(
-          primarySwatch: Colors.blue
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text('西湖一日游'),
       ),
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('西湖一日游'),
-        ),
-        body: new ListView(
-          children: <Widget>[
-            new Image.asset(
-              'images/lake.jpg',
-              width: 600.0,
-              height: 240.0,
-              fit: BoxFit.cover,
-            ),
-            titleSection,
-            buttonSection,
-            contentSection
-          ],
-        ),
+      body: new ListView(
+        children: <Widget>[
+          new Image.asset(
+            'images/lake.jpg',
+            width: 600.0,
+            height: 240.0,
+            fit: BoxFit.cover,
+          ),
+          titleSection,
+          buttonSection,
+          contentSection
+        ],
       ),
     );
   }
