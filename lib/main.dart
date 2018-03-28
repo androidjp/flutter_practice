@@ -5,6 +5,7 @@ import 'package:flutter_app/sample3_my_home_page/all_kind_of_layout.dart';
 import 'package:flutter_app/sample1_random_word/random_word.dart';
 import 'package:flutter_app/sample3_my_home_page/my_home_page.dart';
 import 'package:flutter_app/sample4_movie/list/movie_list_page.dart';
+import 'package:flutter_app/sample5_camera/camera_page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Flutter Demo',
       theme: new ThemeData(
-           primarySwatch: Colors.orange,
+           primarySwatch: Colors.blue,
       ),
 //      Hello world
 //      home: new MyHomePage(title: 'For Jasper\'s first flutter'),
@@ -27,10 +28,10 @@ class MyApp extends StatelessWidget {
 //        home:new CallPage()
 //    sample3
 //      home: new AllKindOfLayoutPage(title:'各种布局方式')
-//    sample4: a complex layout home page
-//        home: new ComplexHomePage(title:'一个更复杂的布局例子')
-//    sample5: a movie list
-        home: new MovieListPage(),
+//    sample4: a movie list
+//        home: new MovieListPage(),
+//      sample5 : camera
+        home: new CameraPage(title: 'Simple Image Picker',)
     );
 
   }
